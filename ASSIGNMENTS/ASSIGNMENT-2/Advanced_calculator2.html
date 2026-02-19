@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced calculator</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div id="cont">
+        <div id="calculator">
+            <div id="input"></div>
+            <div id="keys">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div id="operator">+</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div id="operator">-</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div id="operator">*</div>
+                <div id="clear_button">C</div>
+                <div>0</div>
+                <div id="operator">=</div>
+                <div id="operator">/</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let bag = ""
+        const num = document.querySelectorAll("#keys div")
+        console.log(num)
+
+        for (let i = 0; i < num.length; i++) {
+            num[i].addEventListener("click", mycalc)
+        }
+
+
+        function mycalc(event) {
+            let targetnumber = event.target.innerText
+            console.log(targetnumber)
+
+            if (targetnumber == "C") {
+                bag = ""
+                document.querySelector("#input").innerText = bag;
+                return;
+
+            }
+            else if (targetnumber == "=") {
+                let ans = eval(bag)
+                document.querySelector("#input").innerText = ans;
+
+                try {
+                    if (bag.includes("/0")) {
+                        input.innerText = "Infinity";
+                        bag = "";
+                        return;
+                    }   
+                }
+                catch (err) {
+                    document.querySelector("#input").innerText = "Error";
+                    bag = "";
+
+                }
+            }
+            else {
+                    bag += targetnumber
+                    document.querySelector("#input").innerText = bag;
+                    return;
+                }
+            }
+    </script>
+</body>
+
+
+</html>
