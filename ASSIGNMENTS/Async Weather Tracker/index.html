@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Weather Tracker</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0; 
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #001854fd, #001854cf);
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div style="margin: 0 auto; display: flex; justify-content: center; align-items: center;" >
+        <h1 style="color: white;text-shadow: 3px 2px 5px #000080; opacity: 0.8;">🌤️Async Weather Tracker</h1>
+    </div>
+    <!-- Container -->
+    <div class="container">
+        <!-- Search city form -->
+        <div class="search_city">
+            <form>
+                <h1 for="city_name">Search City</h1><br>
+                <input id="city_name" type="text" placeholder="Search City" required>
+                <input id="search_btn" type="submit" value="Search">
+            </form>
+            <div class="search_history">
+                <h1>Search history</h1>
+            </div>
+        </div>
+        <!-- Search Info -->
+        <div class="weather_info">
+            <h1>Weather Info</h1>
+            <br><br>
+            <div class="info_container">
+                
+            </div>
+            
+        </div>
+        <!-- console log -->
+        <div class="history">
+            <h2>Console -- Event loop </h2>
+            <div class="console"></div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

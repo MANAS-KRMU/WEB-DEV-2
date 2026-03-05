@@ -1,0 +1,174 @@
+
+#search_btn {
+    transition: transform 0.2s ease;
+}
+
+#search_btn:hover {
+    transform: scale(1.05);
+}
+
+
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+    grid-template-rows: auto auto;
+    gap: 30px;
+}
+
+
+.history {
+    grid-column: 1 / 3;
+}
+
+.search_city,
+.weather_info,
+.history {
+    background: #f5f5f5;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease;
+}
+
+.search_city:hover, 
+.weather_info:hover, 
+.history:hover {
+    transform: translateX(5px);
+    transform: scale(1.05);
+}
+
+.weather_info {
+    min-width: 580px;
+    min-height: 225px;
+}
+
+.search_history h1 {
+    margin-top: 15px;
+}
+
+.search_city h1,
+.weather_info h1 {
+    font-size: 22px;
+    background-image: linear-gradient(45deg, #00247dfd, #055393);
+    color: transparent;
+    background-clip: text;
+    text-shadow: 1px 1px 15px #000080;
+}
+button,
+#search_btn {
+    background-color: rgb(255, 115, 0);
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+button:hover,
+#search_btn:hover {
+    opacity: 0.9;
+}
+button {
+    width: 320px;
+}
+input#city_name{
+    width: 363px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    outline: none;
+    transition: transform 0.2s ease;
+
+}
+input:hover{
+    transform: translateX(5px);
+    transform: scale(1.05);
+}
+input:focus{
+    border-image: linear-gradient(135deg, #00247dfd, #054793) 1;
+}
+
+.info_container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding-right: 40px;
+    padding-top: 6px;
+    max-height: min-content;
+}
+
+.infoCard {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p{
+    border-left: 5px solid orange;
+    transition: transform 0.5s ease;
+    z-index: 100;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+p:hover {
+    transform: scale(1.5);
+}
+
+.remove_btn {
+    position: relative;
+    right: 0;
+    top: 0;
+}
+
+.console {
+    background-color: #00035b;
+    min-height: 30px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.step1{
+    padding-left: 10px;
+    color: white;
+    border-left: 5px solid orangered;
+    height: 30px;
+    border-top-left-radius: 8px;
+}
+
+.step2{
+    padding-left: 10px;
+    color: white;
+    border-left: 5px solid rgb(116, 116, 116);
+    height: 30px;
+}
+
+.step3 {
+    padding-left: 10px;
+    color: white;
+    border-left: 5px solid orangered;
+    height: 30px;
+    border-bottom-left-radius: 8px;
+}
+
+.clear_con{
+    color: white;
+    background-color: orangered;
+    text-align: center;
+    place-items: center;
+    border-radius: 50px;
+    position: relative;
+    top: -30px;
+    right: -1024px;
+    width: 26px;
+    height: 27px;
+    cursor: pointer;
+}
