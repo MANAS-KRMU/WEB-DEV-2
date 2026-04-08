@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  font-family: myFont, Arial;
+  background: #06121a;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  padding-top: 55px;
+}
+
+.Head{
+  text-align: left;
+}
+
+.glow {
+  color: #00ffd5;
+  text-shadow: 0 0 30px #00ffd5;
+  
+}
+
+.transparent {
+  filter: opacity(0.8);
+}
+
+.card {
+  background: #0b1c26;
+  border: 1px solid #1b3a46;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+input {
+  background: transparent;
+  border: 1px solid #1b3a46;
+  padding: 10px;
+  color: white;
+}
+
+button {
+  background: transparent;
+  border: 1px solid #00ffd5;
+  color: #00ffd5;
+  padding: 10px 15px;
+  cursor: pointer;
+}
