@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Header from "./components/Header";
-import AddStudent from "./components/AddStudent";
-import Stats from "./components/Stats";
-import StudentTable from "./components/StudentTable";
+import Header from "./Components/Header";
+import AddStudent from "./Components/AddStudent";
+import Stats from "./Components/Stats";
+import StudentTable from "./Components/StudentTable";
 import "./App.css";
 
 function App() {
