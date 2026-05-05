@@ -11,6 +11,7 @@ function App() {
     { name: "Riya", score: 45 },
     { name: "Karan", score: 90 },
     { name: "Neha", score: 32 },
+    { name: "Manas", score: 28 }
   ]);
 
   const addStudent = (name, score) => {
